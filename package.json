@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3"
+  }
+}
