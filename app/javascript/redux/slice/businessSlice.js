@@ -9,7 +9,7 @@ const initialState = {
 
 export const fetchBusiness = createAsyncThunk('business/fetchBusiness', async () => {
   try {
-    const response = await axios.get('/');
+    const response = await axios.get('/show_businesses');
     return response.data;
   } catch (error) {
     throw new Error('Failed to fetch Businesses.');
