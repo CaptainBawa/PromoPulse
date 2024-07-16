@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   root 'business#index'
 
   resources :business, only: [:create]
+  get 'show_businesses', to: 'business#show_businesses'
 end
