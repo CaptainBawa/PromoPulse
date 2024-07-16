@@ -2,7 +2,9 @@ class BusinessController < ApplicationController
   include Rails.application.routes.url_helpers
   skip_before_action :verify_authenticity_token, only: [:create]
 
-  def index
+  def index; end
+
+  def show_businesses
     @businesses = Business.all
 
     if @businesses.empty?
