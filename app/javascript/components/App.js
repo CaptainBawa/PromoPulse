@@ -1,15 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './LandingPage';
+import LandingPage from './LandingPage';
 
 const App = () => (
-  <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
-  </>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
