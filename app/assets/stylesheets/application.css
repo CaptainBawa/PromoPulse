@@ -13,3 +13,119 @@
  *= require_tree .
  *= require_self
  */
+
+ *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+#root {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: Open Sans, Roboto, Arial, Helvetica, sans-serif, SimSun;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0.7rem;
+    width: 100%;
+    height: 8vh;
+    background-color: #d9d9d9d1;
+    backdrop-filter: blur(7px);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.kent {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.mobile-toggle {
+    width: 12%;
+    float: inline-end;
+}
+
+nav button {
+    border: none;
+    height: 10vh;
+    background-color: transparent;
+    position: relative;
+    left: 9rem;
+    top: 0;
+    font-size: 2em;
+}
+
+.mobile-toggle button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-toggle .bar {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+}
+
+header .nav-menu {
+    display: none;
+    width: 60%;
+    height: 50vh;
+    z-index: 1000;
+    justify-content: center;
+    position: relative;
+    left: 10rem;
+    bottom: 3rem;
+    background-color: rgb(249 249 249 / 39%);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+}
+
+header .nav-menu.visible {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+}
+
+header li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header li a {
+    font-family: 'Dear Dreamer', sans-serif;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.hero-container {
+    width: 100%;
+    height: 40%;
+}
+
+.bg-hero-container {
+    height: 70rem;
+    background-size: cover;
+}
