@@ -3,7 +3,7 @@ import business from '../../assets/images/business.png';
 import globe from '../../assets/images/globe.png';
 
 const Hero = () => (
-  <div className="hero-container">
+  <section className="hero-container">
     <div>
       <img src={business} alt={business} />
       <img src={globe} alt={globe} />
@@ -14,7 +14,7 @@ const Hero = () => (
       their customers, and drive growth through meaningful
       engagement and support.
     </p>
-  </div>
+  </section>
 );
 
 export default Hero;
