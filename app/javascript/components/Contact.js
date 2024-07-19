@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => (
-  <section className="contact">
+  <section id="contact-us" className="contact">
     <p>
       If you have any questions or want to add
       your business,feel free to reach out to us:
