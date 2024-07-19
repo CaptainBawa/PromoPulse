@@ -3,6 +3,8 @@ import Business from './Business';
 import NavBar from './NavBar';
 import Hero from './Hero';
 import wave from '../../assets/images/wave.svg';
+import AboutAddBiz from './AboutAddBuz';
+import Contact from './Contact';
 
 const LandingPage = () => (
   <div>
@@ -11,6 +13,8 @@ const LandingPage = () => (
       <Hero />
     </div>
     <Business />
+    <AboutAddBiz />
+    <Contact />
   </div>
 );
 
