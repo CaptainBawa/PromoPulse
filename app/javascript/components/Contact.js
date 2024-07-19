@@ -1,13 +1,17 @@
 import React from 'react';
 
 const Contact = () => (
-  <div>
+  <div className="contact">
     <p>
       If you have any questions or want to add
       your business,feel free to reach out to us:
+      Call or Whatsapp
     </p>
-    <h3>0549542885</h3>
-    <h3>0549542885</h3>
+    <span>
+      <strong>0549542885</strong>
+      {' '}
+      <strong>0549542885</strong>
+    </span>
   </div>
 );
 
