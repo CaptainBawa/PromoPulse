@@ -41,9 +41,9 @@ const NavBar = () => {
         </button>
         <ul>
           <li className="nav-list-item"><a href="/">HOME</a></li>
-          <li className="nav-list-item"><a href="#work">ADD BUSINESS</a></li>
-          <li className="nav-list-item"><a href="#projects">ABOUT US</a></li>
-          <li className="nav-list-item"><a href="#blog">CONTACT US</a></li>
+          <li className="nav-list-item"><a href="#about-and-business">ADD BUSINESS</a></li>
+          <li className="nav-list-item"><a href="#about-and-business">ABOUT US</a></li>
+          <li className="nav-list-item"><a href="#contact-us">CONTACT US</a></li>
         </ul>
       </nav>
     </header>
