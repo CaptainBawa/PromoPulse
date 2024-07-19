@@ -14,7 +14,10 @@
  *= require_self
  */
 
- *,
+@import url('https://fonts.cdnfonts.com/css/nekluch-trial');
+@import url('https://fonts.cdnfonts.com/css/dark-mood');
+
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -47,8 +50,10 @@ header {
 
 .kent {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
+    letter-spacing: 0.5rem;
+    font-family: 'Dark Mood', sans-serif;                                        
 }
 
 .mobile-toggle {
@@ -64,6 +69,7 @@ nav button {
     left: 9rem;
     top: 0;
     font-size: 2em;
+    color: #fff;
 }
 
 .mobile-toggle button {
@@ -92,7 +98,7 @@ header .nav-menu {
     position: relative;
     left: 10rem;
     bottom: 3rem;
-    background-color: rgb(249 249 249 / 39%);
+    background-color: rgb(41 39 39 / 90%);
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     box-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
@@ -118,7 +124,7 @@ header li {
 header li a {
     font-family: 'Dear Dreamer', sans-serif;
     font-size: 1.3rem;
-    color: #000;
+    color: #fff;
 }
 
 .hero-container img {
@@ -131,6 +137,8 @@ header li a {
     font-weight: 700;
     text-align: center;
     line-height: 1.4;
+    padding: 0 0.5rem;
+    font-family: 'NEKLUCH Trial', sans-serif;
 }
 
 .bg-hero-container {
@@ -229,3 +237,44 @@ header li a {
     margin: 1rem auto;
     text-align: center;
 }
+
+footer {
+    background-color: #1681eb;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 0.7rem;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
