@@ -325,5 +325,38 @@ footer {
     header li a {
         font-size: 1.8rem;
     }
+
+    .bg-hero-container {
+        height: 65vh;
+    }
+
+    .hero-container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-container p {
+        width: 55%;
+        height: fit-content;
+        font-size: 2rem;
+        margin-bottom: 10%;
+        margin-top: 0;
+        line-height: 1.7;
+        padding: 0;
+    }
+
+    .hero-container img {
+        left: 0;
+        width: 35%;
+    }
+
+    .businesses-container {
+        margin-top: -15rem;
+    }
+
+    .businesses-sub-container {
+        width: 30%;
+    }
 }
 
