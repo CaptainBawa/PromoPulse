@@ -15,7 +15,9 @@ const LandingPage = () => (
     </div>
     <Business />
     <AboutAddBiz />
-    <Contact />
+    <div className="for-space">
+      <Contact />
+    </div>
     <Footer />
   </main>
 );
