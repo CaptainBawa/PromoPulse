@@ -287,3 +287,43 @@ footer {
     animation-play-state: paused;
 }
 
+@media only screen and (min-width: 1500px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    .mobile-toggle,
+    header nav button {
+        display: none;
+    }
+
+    header .nav-menu {
+        width: 55%;
+        height: 6vh;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-color: transparent;
+        backdrop-filter: none;
+    }
+
+    header .nav-menu ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    header .nav-menu.visible {
+        display: flex;
+    }
+
+    header li a {
+        font-size: 1.8rem;
+    }
+}
+
