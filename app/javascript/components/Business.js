@@ -29,13 +29,24 @@ const Business = () => {
   }
 
   return (
-    <div>
+    <section className="businesses-container">
       {businesses.map((business) => (
-        <div key={business.id}>
-          <h1>{business.business_name}</h1>
+        <div className="businesses-sub-container" key={business.id}>
+          <img src={business.image_url} alt={business.business_name} />
+          <div className="content">
+            <span>
+              {business.business_name}
+            </span>
+            <span>
+              <img id="loc" src="https://img.icons8.com/ultraviolet/40/marker.png" alt="marker" />
+              {business.location}
+            </span>
+            <p>{business.business_description}</p>
+            <a href={`tel:${business.contact}`}>Call us</a>
+          </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
