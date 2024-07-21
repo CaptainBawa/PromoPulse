@@ -28,5 +28,6 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "file-loader": "^6.2.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
